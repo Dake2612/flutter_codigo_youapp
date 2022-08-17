@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_codigo_youapp/services/api_service.dart';
 import 'package:flutter_codigo_youapp/ui/general/colors.dart';
 import 'package:flutter_codigo_youapp/ui/widgets/item_filter_widget.dart';
 import 'package:flutter_codigo_youapp/ui/widgets/item_video_widget.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+
+  final APIService apiService = APIService();
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +49,7 @@ class HomePage extends StatelessWidget {
                   ),
                   ItemFilterWidget(
                     text: "Mixes",
-                    isSelected: true,
+                    isSelected: false,
                   ),
                   ItemFilterWidget(
                     text: "Musica",
