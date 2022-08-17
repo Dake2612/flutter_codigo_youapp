@@ -90,7 +90,9 @@ class _HomePageState extends State<HomePage> {
               physics: ScrollPhysics(),
               itemCount: videos.length,
               itemBuilder: (BuildContext context, int index) {
-                return ItemVideoWidget(videoModel: videos[index],);
+                return ItemVideoWidget(
+                  videoModel: videos[index],
+                );
               },
             ),
           ],
